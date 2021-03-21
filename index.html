@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Yodel button</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@700&display=swap"
+    rel="stylesheet">
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"
+    integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ=="
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+  <div id="content">
+    <div id="border-div">
+      <div>
+        <h1>IN CASE OF</h1>
+      </div>
+      <div id="middle-panel">
+        <p id="push">PUSH</p>
+        <button id="yodel" onclick="yodelIT()"></button>
+        <p id="here">HERE</p>
+      </div>
+      <div>
+        <h1>EMERGENCY</h1>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="about">2020 - <a href="https://github.com/SPECTR3R">SPECTRER SOFTWARE</a></h2>
+
+
+
+  <script src="circletype.min.js"></script>
+
+  <script>
+    new CircleType(document.getElementById('push'))
+      .radius(150);
+
+    new CircleType(document.getElementById('here'))
+      .dir(-1)
+      .radius(150);
+
+    function yodelIT() {
+      var sound = new Howl({
+        src: "/yodel.mp3"
+      });
+      sound.play()
+    }
+  </script>
+
+
+
+</body>
+
+</html>
