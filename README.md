@@ -2,7 +2,7 @@
 
 A remake for https://www.emergencyyodel.com/
 
-The original is uses flash, wo is no onger accesible.
+The original uses flash, so is no longer accesible.
 
 build with:
 -html5
